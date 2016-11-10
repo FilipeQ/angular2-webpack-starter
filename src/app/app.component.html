@@ -1,0 +1,22 @@
+<header>
+  <h1><a [routerLink]="['./']" >{{name}}</a></h1>
+  <nav>
+    <a [routerLink]="['./top-junglers']" >
+      Top Junglers
+    </a>
+    <a >
+      Top Supports
+    </a>
+    <a >
+      Top Useless
+    </a>
+  </nav>
+</header>
+
+<main>
+  <router-outlet></router-outlet>
+</main>
+
+<footer>
+  <span>WebPack Angular 2 Starter by FQ</span>
+</footer>

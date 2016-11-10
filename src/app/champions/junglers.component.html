@@ -1,0 +1,32 @@
+<h2>Top Junglers</h2>
+
+<div class="container-add-jungler">
+  <label>Add Jungler</label>
+  <form (submit)="addJungler($event)">
+    <div class="group1">
+      <div class="form-group">
+        <label for="name">Name</label>
+        <input type="text" class="form-control" id="name" required>
+      </div>
+      <div class="form-group">
+        <label for="type">Type</label>
+        <input type="text" class="form-control" id="type" required>
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="img">Link for logo</label>
+      <input type="text" class="form-control" id="img" required>
+    </div>
+    <button type="submit" class="btn btn-default">Submit</button>
+  </form>
+</div>
+
+<ul class="list-champ">
+  <li *ngFor="let jungler of junglers">
+    <img src="{{jungler.imgUrl}}"/>
+    <div class="info-champion">
+      <span >Name: {{jungler.name}}</span>
+      <span >Type: {{jungler.type}}</span>
+    </div>
+  </li>
+</ul>

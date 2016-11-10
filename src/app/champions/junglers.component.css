@@ -1,0 +1,45 @@
+junglers{
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 80%;
+}
+
+.info-champion{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex: 1 1 auto;
+}
+
+.list-champ{
+  width: 100%;
+  padding-left: 0px;
+}
+
+.list-champ li{
+  display: flex;
+  margin: 10px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16),0 3px 6px rgba(0,0,0,0.23);
+  border-radius: 15px;
+  padding: 15px;
+}
+
+.list-champ li img{
+  height: 120px;
+  width: 120px;
+}
+
+.list-champ li:hover{
+  background-color: #ded1d1;
+}
+
+.container-add-jungler{
+  align-self: flex-start;
+  margin: 10px;
+}
+
+.group1{
+  display: flex;
+}
